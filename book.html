@@ -27,7 +27,7 @@
         <div class="container mx-auto flex justify-between items-center">
           <!-- Logo -->
           <div class="flex items-center">
-         <a href="index.html"><img src="/assets/imgs/log.jpg alt="Logo" width="150px"></a>   
+         <a href="index.html"><img src="/assets/imgs/log.jpg" alt="Logo" width="150px"></a>   
           </div>
       
           <!-- Hamburger Menu Icon -->
@@ -104,24 +104,26 @@
           
               <form id="recovery-form">
                 <!-- How did you lose access -->
-                <div class="mb-6">
-                  <label class="block text-xl font-medium text-gray-700 mb-2">
-                    How did you lose access to your coins? *
-                  </label>
-                  <br>
-                  <select
-                    id="issue"
-                    class="w-full border-2 border-gray-400  rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3"
-                    required
-                  >
-                    <option value="">Select an option</option>
-                    <option value="Forgot Password">Forgot Password</option>
-                    <option value="Old Wallet Version">Old Wallet Version</option>
-                    <option value="Deleted Data">Deleted Data</option>
-                    <option value="Scam">Scam</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
+               <div class="mb-6">
+  <label class="block text-xl font-medium text-gray-700 mb-2">
+    What type of crypto investment are you interested in? *
+  </label>
+  <br>
+  <select
+    id="investment-type"
+    class="w-full border-2 border-gray-400 rounded-lg shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3"
+    required
+  >
+    <option value="">Select an option</option>
+    <option value="Long-term Growth">Long-term Growth</option>
+    <option value="Short-term Trading">Short-term Trading</option>
+    <option value="Altcoin Portfolio">Altcoin Portfolio</option>
+    <option value="NFT Investments">NFT Investments</option>
+    <option value="Institutional Investment">Institutional Investment</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
           
                 <!-- Name -->
                 <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -217,8 +219,10 @@
                   ></textarea>
                 </div>
           
-                <p class="p-4 text-center ">Submit your request and we will contact you as soon as possible to discuss your recovery. Please be aware that we will be signing a contract before we attempt to recover your funds.</p>
-                <!-- Submit Button -->
+              <p class="p-4 text-center">
+  Submit your request and we’ll get in touch shortly to discuss your investment goals. Please note that all investment engagements are formalized through a client agreement to ensure transparency and trust.
+</p>
+       <!-- Submit Button -->
                 <button
                   type="submit"
                   class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700"
